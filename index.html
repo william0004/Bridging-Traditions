@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bridging Traditions: A Digital Platform for Chinese Culture</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="icon" herf="favicon.ico" type="image/x-icon" />
+        
+    </head>
+    
+    <body>
+        <!-- navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#rsvp">Register</a></li>
+                <li><a href="#links">Links</a></li>
+                <li class="motion-mode-container">
+                    <img class="motion-button" id="motion-off-button" src="./icon/off-button.png"/>
+                    <button id="motion-switch"> Reduce Motion </button>
+                    <img class="motion-button" id="motion-on-button" src="./icon/on-button.png"/>
+                    <img id="motion-mode-img" src="./icon/motion.png"/>
+                    <label id="motion-label">Reduce Motion</label>
+                </li>
+                <li class="dark-mode-container">
+                    <img class="dark-mode-img" id="light-img" src="./icon/brightness-light.png"/>
+                    <img class="dark-button" id="off-button" src="./icon/off-button.png"/>
+                    <img class="dark-button" id="on-button" src="./icon/on-button.png"/>
+                    <button class="dark-button" id="switch-button"> Dark Mode </button>
+                    <img class="dark-mode-img" id="dark-img" src="./icon/brightness-dark.png"/>
+                </li>
+            </ul>
+        </div>
+
+        <!-- headings -->
+        <div class="header" id="home">
+            <div class="header-left">
+                <div>
+                    <h6>HAPPY NEW YEAR!</h6>
+                    <h1>Bridging Traditions</h1>
+                    <h8>A Digital Platform for Celebrating Chinese New Year in U.S. Communities</h8>
+                    <h8>Celebrate Chinese New Year on Tuesday, February 17th, 2026. 
+                        Find location and date, and discover the Spring Festival’s food, festivals and traditions.</h8>
+                </div>
+            </div>
+            <div class="header-right">
+                <button type="button">Share Page</button>
+                <button type="button">Read 2026 Guide!</button>
+            </div>
+        </div>
+        
+        <!-- about --> 
+        <div class="section" id="about">
+            <h2 class="scetion-title">About the Event</h2>
+            <iframe id="about-video" width="560" height="315" src="https://www.youtube.com/embed/Mzq9jRFUjRA?si=BUvrrR_jmzQWCDGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>The coming year is 2026, families, friends, and neighbors will gather to honor centuries-old traditions while embracing new ways to celebrate the Lunar New Year. Expect a joyful blend of cultural performances, dazzling lantern displays, and mouthwatering street food that captures the essence of this cherished holiday.</p>
+            <p>Whether you're here to witness the thrilling lion dances, share stories over dumplings, or simply soak in the festive energy, this is your space to connect, celebrate, and welcome a prosperous Year of the Horse with your community. No pressure—just joy, tradition, and (maybe) a few lucky red envelopes.</p>    
+            <div class="about-expect">
+                <h3>What to Expect</h3>
+                <h4>Tag Line</h4>
+                <ul>
+                    <li> <b>Traditional Performances: </b> <i>Experience the excitement of lion and dragon dances, martial arts showcases, and live music that bring ancient traditions to life.</i></li>
+                    <li> <b>Delicious Street Food: </b> <i> Savor authentic Chinese cuisine—from dumplings and noodles to sweet rice cakes—served by local vendors throughout Chinatown.</i></li>
+                    <li> <b>Lantern Displays & Fireworks: </b> <i> Stroll beneath glowing lanterns and cap off the festivities with a dazzling fireworks show to welcome a bright and prosperous new year!</i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- schedule --> 
+        <div class="section revealable" id="events">
+            <h2 class="scetion-title">Event Schedule</h2> 
+            <div class="events-container">
+                <div class="event" id="event-1">
+                    <div class="event-image-container">
+                        <img class="activity-image" alt="Image of activity 01" src="./img/activity_01.jpg"/>
+                        <img class="more-icon" alt="more-icon" src="./icon/info.png"/>
+                    </div>
+                    <div class="event-info">
+                        <h3>Lantern Festival</h3>
+                        <p class="event-descr" style="display: none;">Step into a glowing dreamscape at the New Year Lantern Festival—one of Los Angeles Chinatown’s most enchanting traditions Eevent. 
+                            <br> <span class="spacer"></span>
+                            On Saturday, February 28, 2026, from 6 PM to 10 PM, streets transform into a luminous wonderland adorned with handcrafted lanterns shaped like dragons, 
+                            zodiac animals, and blooming lotuses. 
+                            <br> <span class="spacer"></span>
+                            Wander beneath cascades of light, watch fireworks ignite the sky above Portsmouth Square at 8 PM, 
+                            and join interactive workshops to create your own paper lanterns. 
+                            <br> <span class="spacer"></span>
+                            Don’t miss the cultural stage show at 7 PM, where dancers reenact ancient legends with silk fans and swirling ribbons. </p>
+                        <ul>
+                            <li>February 21, 2026 · 7–10pm</li>
+                            <li>Chinatown Central Plaza</li>
+                            <li>943 N Broadway, Los Angeles</li>
+                            <li>From $0.00</li>
+                            <li>General Events</li>
+                        </ul>
+                    </div>
+                </div>      
+    
+                <div class="event" id="event-2">
+                    <div class="event-image-container">
+                        <img class="activity-image" alt="Image of activity 02: Golden Dragon Parade" src="./img/activity.jpg"/>
+                        <img class="more-icon" alt="more-icon" src="./icon/info.png"/>
+                    </div>
+                    <div class="event-info">
+                        <h3>Golden Dragon Parade</h3>
+                        <p class="event-descr" style="display: none;">Join in one of L.A.’s oldest traditions at the 127th annual Golden Dragon Parade. 
+                            <br> <span class="spacer"></span>
+                            The colorful procession of lion dancers, dance troupes, music groups and more will make its way through Chinatown 
+                            (kicking off at Ord and Hill Streets, and concluding at Broadway and Cesar E Chavez Avenue) on Saturday, February 21, 2026, from 1 to 4pm. 
+                            <br> <span class="spacer"></span>
+                            The parade historically coincides with a free Chinese New Year festival in the Central Plaza as well.</p>
+                        <ul>
+                            <li>February 21, 2026 · 2–4pm</li>
+                            <li>Chinatown Central Plaza</li>
+                            <li>943 N Broadway, Los Angeles</li>
+                            <li>From $0.00 · Grandstand seats $50</li>
+                            <li>Show</li>
+                        </ul>
+                    </div>
+                </div>   
+    
+                <div class="event" id="event-3">
+                    <div class="event-image-container">
+                        <img class="activity-image" alt="Image of activity 03: Traditional Chinese Food" src="./img/activity_03.jpg"/>
+                        <img class="more-icon" alt="more-icon" src="./icon/info.png"/>
+                    </div>
+                    <div class="event-info">
+                        <h3>Traditional Chinese Food</h3>
+                        <p class="event-descr" style="display: none;">Get ready to indulge in a mouthwatering journey through Chinatown’s vibrant flavors! 
+                            <br> <span class="spacer"></span>
+                            Our Chinese New Year Food Market will feature a wide variety of traditional and modern Chinese dishes prepared by beloved local chefs and vendors. 
+                            <br> <span class="spacer"></span>
+                            From savory bites to sweet treats, there’s something to satisfy every craving.</p> 
+                        <ul>
+                            <li>February 21-22, 2026 · 10am–10pm</li>
+                            <li>Chinatown Central Plaza</li>
+                            <li>943 N Broadway, Los Angeles</li>
+                            <li>From $0.00</li>
+                            <li>Food, Drink, Play</li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- rsvp --> 
+        <div class="section revealable" id="rsvp">
+            <h2 class="scetion-title" >RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <h2>Join Us!</h2>
+                    <p>Step into the heart of culture, tradition, and festivity by joining us in celebrating Chinese New Year on Tuesday, 
+                        February 17th, 2026! <br>
+                        Reserve your spot now to immerse yourself in a day filled with joy, connections, and shared community spirit.
+                        Let's welcome the Year of the Horse together in radiant style! 🐴✨🧧🧧🧧</p>
+                    <div class="rsvp-counting"> 
+                        <p id="rsvp-count"> 🎉 3 people have RSVP'd to this event! </p>
+                    </div>  
+                </div>
+                <div class="form-container">
+                    <!--- Sign RSVP Form --->
+                    <form id="rsvp-form" title="rsvp-form">
+                        <label for="name">NAME</label>
+                        <input id="rsvp-name" label="name" type="text"> 
+                        <label for="phone">PHONE</label>
+                        <input id="rsvp-phone" label="phone" type="tel"> 
+                        <label for="email">EMAIL</label>
+                        <input id="rsvp-email" label="email" type="email">
+                        <!-- Submit button -->
+                        <input id="rsvp-submit" type="submit" value="SUBMIT RSVP">
+                    </form>
+                    <button id="register-button">REGISTER >></button>
+                </div>  
+                <div class="rsvp-participants">
+                    <p>🎟️ DJ from Texas has RSVP'd.</p>
+                    <p>🎟️ Amy from New York has RSVP'd.</p>
+                    <p>🎟️ Teresa from Montana has RSVP'd.</p>
+                    <div class="participants">
+                        <!-- RSVPs go here -->
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+        <!-- success modal --> 
+        <div class="success-modal">
+            <div class="modal-container">
+                <div class="modal-content"> 
+                    <div class="modal-text"> 
+                        <h3 id="modal-greeting">CONGRATULATION!</h3>
+                        <p id="modal-message">Your RSVP has been successfully recorded! 
+                            <br>We're excited to have you join us for a day filled with joy, tradition, and community spirit.
+                            See you soon! </p>
+                    </div>
+                    <img id="success-img" alt="success modal image" src="img/success.png"/>
+                </div>
+                <button class="modal-close-button">CLOSE</button>
+            </div>
+        </div>
+
+
+
+        <!-- links --> 
+        <div class="section revealable" id="links">
+            <h2 class="scetion-title" >Links</h2>
+            <a class="block" href="https://www.rmg.co.uk/stories/topics/how-do-people-celebrate-chinese-new-year">
+                <article>
+                    <h3>What is Chinese New Year?</h3>
+                    <p>The festival observed on the traditional Chinese calendar.</p>
+                </article>
+            </a>
+    
+            <a class="block" href="https://asia.si.edu/whats-on/events/celebrations/lunar-new-year-celebration/">
+                <article>
+                    <h3>How do people celebrate Chinese New Year?</h3>
+                    <p>From folk stories and traditions to food, drink and costumes, learn about just some of the ways Chinese New Year is celebrated</p>
+                </article>
+            </a>
+        </div>
+            
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-container">
+                <a class="block" href="">
+                    <p>Learn More</p>
+                </a>
+                <a>/</a>
+                <a class="block" href="">
+                    <p>Email Our Team</p>
+                </a>
+            </div>
+        </div>
+       
+        <!-- script -->
+        <script src="index.js"> </script>
+    </body>
+</html>

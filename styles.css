@@ -1,0 +1,616 @@
+/*** VSCodeEDU preview fix ***/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***/
+
+body {
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; 
+}
+
+body p, h1, h2, h3, h4, h6, h8 {
+    padding: 10px 0;
+}
+
+/*** header ***/
+.header {
+    height: 400px;
+    background-color: var(--theme-color-red);
+    margin-top: 50px;
+    padding-bottom: 30px;
+    color: var(--header-text-color);
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;	
+
+    background-image: url('./img/logo.jpg'); 
+    background-size: 500px;
+    background-position: 60%; 
+    background-repeat: no-repeat; 
+}
+
+.header-left {
+    width: 40%;
+    margin-left: 80px;
+}
+
+.header-left h1 {
+    padding: 30px 0;
+}
+
+.header-right {
+    padding: 0px 30px;
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header button {
+    background-color:var(--theme-color-red);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    color:var(--header-text-color);
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: var(--theme-color-gold);
+    color: var(--theme-color-red);
+}
+
+.header h1 {
+    font-size: 64px;
+}
+
+.header h6 {
+    font-size: 16px;
+}
+
+.header h8 {
+    font-size: 14px;  
+}
+
+.section {
+    padding: 80px;
+}
+
+.scetion-title {
+    color: var(--theme-color-red);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/*** footer ***/
+.footer {
+    font-size:smaller;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--theme-color-red);
+    padding: 0 80px;
+  }
+
+.footer a {
+    color: var(--header-text-color);
+}
+
+.footer a:hover {
+    color: var(--theme-color-gold);
+}
+
+.footer-container {
+    display: flex;
+    gap: 10px;
+    align-items:center;
+}
+
+
+/*** Navbar  ***/
+.navbar {
+    display: flow-root;
+    position: relative;
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background-color: var(--theme-color-red);
+    padding: 15px 30px;
+}
+
+.navbar ul li {
+    float: left;
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    font-size: 20px; 
+    color: var(--header-text-color);
+    display: block; /* Makes the anchor tag fill the li */
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color:var(--theme-color-gold);
+    text-decoration: underline;
+}
+
+.motion-mode-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 300px;
+    width: 120px;
+    bottom: 5px;
+}
+
+#motion-switch {
+    position: absolute;
+    left: 40px;
+}
+
+.motion-button {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    right: 40px;
+}
+
+#motion-mode-img {
+    position: relative;
+    left: 90px;
+    bottom: 2px;
+}
+
+#motion-label {
+    color: var(--text-color-dark-mode);
+    position: relative;
+    right: 50px;
+    bottom: 5px;
+}
+
+.dark-mode-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    position: absolute;
+    right: 120px;
+}
+
+.dark-button {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    right: 40px;
+}
+
+#switch-button, #motion-switch {
+    z-index: 10;
+    opacity: 0;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dark-mode-img, #motion-mode-img {
+    width: 30px;
+}
+
+#off-button {
+    display: block;
+}
+
+#on-button {
+    display: none;
+}
+
+/*** About Section ***/
+#about p{
+    font-size: 18px;
+}
+
+.about-expect {
+    background-color: var(--theme-color-light-gold);
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin-top: 10PX;
+}
+
+/*** Schedule Section **/
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.event {
+    width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.event:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(249, 58, 37, 0.312), 0 6px 20px 0 rgba(163, 163, 163, 0.493);
+}
+
+.more-icon {
+    width: 60px;
+    padding: 5px;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+
+.event-image-container {
+    width: 350px;
+    height: 240px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 15px 15px 5px 5px;
+}
+
+.activity-image {
+    width: auto; 
+    height: 100%; 
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-info h3 {
+    color: var(--theme-color-red);
+}
+
+.event-descr {
+    color: gray;
+}
+
+.spacer {
+    display: block; 
+    padding: 5px 0; 
+  }
+  
+
+.event ul li {
+    list-style-type: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+/*** Links Section ***/
+
+#links a h3 {
+    color: rgb(46, 46, 46);
+}
+
+#links a:link {
+    color: var(--theme-color-green);
+}
+
+#links a:visited * {
+    color:#594fb5;
+}
+
+#links a:hover {
+    cursor: pointer;
+    color: var(--theme-color-light-green);
+}
+
+#links a:active {
+
+}
+
+
+/*** RSVP Section ***/
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.rsvp-para {
+    padding: 20px;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rsvp-counting {
+    font-size: 22px;
+    margin-top: auto;
+    padding-top: 20px;
+    color: var(--theme-color-green);
+}
+
+.rsvp-participants {
+    margin-top: 30px;
+    width: 25%; 
+    padding: 10px;
+}
+
+.form-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#rsvp-form {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--theme-color-red);
+    box-shadow: 0 5px 10px 0 rgba(249, 58, 37, 0.4), 0 10px 30px 0 rgba(163, 163, 163, 0.6);
+}
+
+#rsvp-form label {
+    color: var(--theme-color-dark-red);
+}
+
+.form-container form input {
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid var(--theme-color-green);
+    outline: none;
+    padding-left: 10px;
+    color:var(--theme-color-green);
+    font-size: 18px;
+}
+
+.form-container form input:focus {
+    border: 2px solid var(--theme-color-gold);
+    outline: none;
+}
+
+#rsvp-submit, #register-button {
+    margin-top: 20px;
+    border: hidden;
+    height: 42px;
+    width: 300px;
+    border-radius: 999px;
+    outline: none;
+    background-color: var(--theme-color-red);
+    color: var(--text-color-dark-mode);
+    font-size: 20px;
+}
+
+#register-button {
+    display: block;
+}
+
+#rsvp-submit:hover, #register-button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--error-color-border);
+    background-color: Var(--error-color);
+  }
+
+/*** Animations  ***/
+
+.revealable {
+    --reveal-distance: 100px; /* CSS Variable */
+    scroll-margin-top: var(--reveal-distance);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 1s ease-out;
+    position: relative;
+    transform: translateY(var(--reveal-distance));
+}
+  
+.active {
+    scroll-margin-top: 0;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/*** Success Modal  ***/
+.success-modal {
+    display: none;   /* modal should be hidden by default*/
+    position: fixed; /* modal cannot move around the screen */
+    z-index: 2;      /* modal appears above other elements */ 
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5); /* 40% opacity black */
+  
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    padding: 50px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    text-align: center;
+    font-size: 1em;
+    font-family: monospace;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;       
+    padding: 20px; 
+
+    position: relative;
+    background: white;
+}
+
+/* 
+* Provided by the Generator. 
+* This is what creates the shadow.
+*/
+.modal-container:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(23deg, #f89b29 0%, #ff0f33 100% );
+    transform: translate3d(0px, 14px, 0) scale(1.03);
+    filter: blur(40px);
+    opacity: var(0.67);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+  }
+
+.modal-container::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+          
+
+.modal-content {
+    color: var(--theme-color-green);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;         
+    margin-bottom: 20px;
+}
+
+.modal-close-button {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    border-radius: 999px;
+    border: none;
+    color: var(--text-color-dark-mode);
+    background-color: var(--theme-color-green);
+}
+
+.modal-close-button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#success-img {
+    width: 180px;
+    height: auto;
+}
+
+/*** Dark Mode ***/
+/* Default dark mode style */
+.dark-mode {
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
+}
+
+.dark-mode #dark-button {
+    border-color: var(--theme-color-green);
+    background-color: var(--theme-color-green);
+}
+
+.dark-mode .scetion-title, .dark-mode .event-info h3 {
+    color: var(--text-color-dark-mode);
+}
+
+.dark-mode .about-expect {
+    background-color: var(--theme-color-dark-gold);
+}
+
+.dark-mode #links a h3 {
+    color: rgb(206, 206, 206);
+}
+
+.dark-mode #links a:link {
+    color: var(--link-color-dark-mode);
+}
+
+.dark-mode #links a:hover {
+    color: rgb(26, 111, 171);
+}
+
+.dark-mode .modal-container {
+    background-color: var(--bg-color-dark-mode);
+}
+
+.dark-mode .rsvp-counting {
+    color: var(--link-color-dark-mode);
+}
+
+
+/*** Custom Colors ***/
+
+:root {
+    /* Theme Colors*/
+    --theme-color-gold: #f6ca2a;
+    --theme-color-light-gold: rgb(249, 227, 131);
+    --theme-color-dark-gold: rgb(177, 165, 111);
+    --theme-color-light-red: rgb(238, 55, 59);
+    --theme-color-red: rgb(156, 23, 26);
+    --theme-color-dark-red: rgb(121, 43, 44);
+    --theme-color-light-green: rgb(102, 169, 102);
+    --theme-color-green:rgb(80, 143, 80);
+
+    /* Light Mode */
+    --bg-color: #ffffff;
+    --header-text-color: white;
+    --text-color: rgb(0, 0, 0);
+
+    /* Dark Mode */
+    --bg-color-dark-mode: rgb(119, 35, 38);
+    --text-color-dark-mode: #fff;
+    --link-color-dark-mode: rgb(32, 143, 221);
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+
+
+
