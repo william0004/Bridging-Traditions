@@ -3,17 +3,17 @@
 **Bridging Traditions** It is a Digital Platform for Celebrating Chinese New Year in U.S. Communities.
 
 ## About The Website
-#### Social impact topic: 
+### Social impact topic: 
 Creating a meaningful website
 
-#### Cultural Significance:
+### Cultural Significance:
 Overview of Chinese New Year (history, traditions, symbolism).
 Importance in preserving Chinese traditional culture in the U.S.
 
-#### Social Connection:
+### Social Connection:
 Foster inclusivity by connecting diverse groups through shared experiences.
 
-#### Community Support:
+### Community Support:
 Amplify local businesses, performers, and cultural organizations.
 
 ## Technology Stack
@@ -21,8 +21,8 @@ HTML, CSS, JavaScript.
 
 ## Walkthrough
 
-<img src=' ' title='Gif Walkthrough' width='' alt='Gif Walkthrough' />
-
+<img src='https://github.com/william0004/Bridging-Traditions/blob/main/gif/Home.gif' title='Home' width='800' alt='Gif Walkthrough' />
+<img src='https://github.com/william0004/Bridging-Traditions/blob/main/gif/Form.gif' title='Form' width='800' alt='Gif Walkthrough' />
 
 ## License
 
